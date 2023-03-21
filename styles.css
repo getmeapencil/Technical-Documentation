@@ -1,0 +1,141 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background: #ffffff;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FDAD15;
+    border-left: 1px solid #FDAD15;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+}
+
+nav header {
+    background-color: #ccc;
+    border-bottom: 2px solid black;
+}
+
+main header {
+    padding: 0.5rem 0rem 0rem;
+}
+
+#navbar{
+    position: fixed;
+    top: 0px;
+    width: 18rem;
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    overflow: auto;
+    background-color: #eee;
+}
+
+nav ul li {
+    border-top: 1px solid black;
+    padding: 1rem 2rem;
+}
+
+#main-doc {
+    margin-left: 18rem;
+    padding: 1rem 2rem;
+}
+
+p {
+    padding: 0.5rem 0rem;
+}
+
+main li {
+    padding: 0.25rem 0rem;
+}
+
+code {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid;
+    font-family: 'Martian Mono', monospace;
+    font-size: small;
+    background-color: #eee;
+    border-radius: 3px;
+    word-break: break-all;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:focus {
+    outline-color: transparent;
+    outline-style: inset;
+    border-bottom: 2px solid #FDAD15;
+}
+
+main a {
+    color: blue;
+}
+
+
+@media screen and (max-width: 600px) {
+    html {
+        scroll-padding-top: 207px;
+        width: 100vw;
+    }
+
+    #navbar {
+        width: 100vw;
+        height: 206.4px;
+        display: flex;
+        flex-direction: column;
+        background-color: #eee;
+        border: 0px;
+        border-bottom: 2px solid black;
+    }
+
+    nav ul {
+        overflow: auto;
+    }
+
+    nav header{
+        display: flex;
+        justify-content: center;
+        background-color: #ccc;
+        border-bottom: 2px solid black;
+    }
+
+    nav ul li {
+        padding: 0.5rem 1rem;
+    }
+
+    #main-doc {
+        margin: 206.4px 0rem 0rem;
+        padding: 0.5rem 1rem;
+    }
+}
